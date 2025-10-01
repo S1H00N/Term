@@ -3,12 +3,19 @@ package com.example.alarm;
 import android.Manifest;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+//사용자로부터 시간을 입력받기 위한 다이얼로그
 import android.app.TimePickerDialog;
 import android.content.Context;
+//액티비티 전환이나 특정 컴포넌트 실행 등 작업의 내용을 담는 객체
 import android.content.Intent;
+//앱 패키지 정보 및 권한 상태를 조회하는 데 사용
 import android.content.pm.PackageManager;
+//Geocoder를 통해 변환된 주소 정보를 담는 클래스
 import android.location.Address;
+
+// Geocoder: 위도/경도 좌표를 실제 주소로, 또는 그 반대로 변환하는 클래스입니다
 import android.location.Geocoder;
+//현재 기기의 안드로이드 버전 정보를 담고 있음
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
