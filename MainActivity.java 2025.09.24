@@ -99,9 +99,9 @@ public class MainActivity extends AppCompatActivity implements TodoAdapter.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this); // 전체 화면 ui 지원 활성화
+        EdgeToEdge.enable(this); // 전체 화면 ui 지원 활성화, 꽉채워주는 역할 
         setContentView(R.layout.activity_main);
-        // 시스템 바 영역에 맞춰 패딩을 조절
+        // 시스템 바 영역에 맞춰 패딩을 조절, 꽉 채워진 화면을 살짝 안으로 밀어줌 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
